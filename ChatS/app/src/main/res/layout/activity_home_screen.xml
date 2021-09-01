@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingHorizontal="16dp"
+            android:layout_marginBottom="2dp"
+            android:layout_height="?attr/actionBarSize">
+
+            <TextView
+                android:id="@+id/chatContactName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recent Chats"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="2dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#D12534ED"/>
+
+        </LinearLayout>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="vertical"
+            android:padding="8dp"
+            app:cardBackgroundColor="#D12534ED"
+            app:cardCornerRadius="10dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recentChatsRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            tools:listitem="@layout/item_recent_char_rv"
+            android:layout_weight="1"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/contactsFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_add_circle_24"
+        app:tint="#2834D3"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"/>
+
+
+</FrameLayout>

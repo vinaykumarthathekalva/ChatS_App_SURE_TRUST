@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<com.google.android.material.card.MaterialCardView-->
+<!--    -->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginBottom="2dp"-->
+<!--    android:orientation="vertical"-->
+<!--    android:padding="8dp"-->
+<!--    app:cardBackgroundColor="#D12534ED"-->
+<!--    app:cardCornerRadius="15dp">-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#D12534ED"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/contactNamePhone"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="8dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="Vinay Kumar"/>
+
+        <TextView
+            android:id="@+id/recentChatTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="16dp"
+            tools:text="18 July - 12:21"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/recentMessageTV"
+        android:paddingHorizontal="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="4dp"
+        android:textColor="#C4E3E1"
+        android:textStyle="bold"
+        tools:text="Message"/>
+
+    <View
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/white"
+        />
+
+</LinearLayout>

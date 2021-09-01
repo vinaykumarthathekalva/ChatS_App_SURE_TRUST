@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "590021224002",
+    "project_id": "chats-fc20e",
+    "storage_bucket": "chats-fc20e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590021224002:android:f4713b9812736c2f362fdb",
+        "android_client_info": {
+          "package_name": "com.example.chats"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "590021224002-nmk1dadf8mqqfmcg1201b0h67squ2l2g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1HW-72A8lSYDQq-xV9OFdXIig7Ox-g9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "590021224002-nmk1dadf8mqqfmcg1201b0h67squ2l2g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
